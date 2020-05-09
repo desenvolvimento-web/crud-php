@@ -11,8 +11,8 @@
   ],
   "autoload": {
     "files": [
-      "lib/functions.php",
-      "src/functions.php"
+      "src/lib.php",
+      "src/main.php"
     ]
   },
   "require": {

@@ -35,5 +35,3 @@ function render(string $filename, array $data = []): string
     ob_end_clean();
     return $contents;
 }
-
-
