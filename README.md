@@ -28,3 +28,9 @@ php -S localhost:8000 -t public/
   - **`src/main.php` é onde fica nosso código principal.**
 - E finalmente `templates/` é onde ficam os arquivos relacionados à renderização de HTML pela aplicação, também é muito conhecido como **views**.
   - _`templates/_layout.phtml` é a base para os outros templates/views e tem coisas comuns à todo o site/aplicação como **header** e o **footer**, assim você não precisa repeti-los em cada página_.
+
+## Quero contribuir
+
+- Se você for iniciante, fique à vontade para criar issues dizendo os pontos apresentados que você não entendeu.
+- E se você for experiênte, fique à vontade para criar PRs ajustando os pontos que poderiam ficar melhores.
+  - _(lembrando que a ideia aqui é manter simples e fácil, é ser um exemplo, não um boilerplate pra uma aplicação maior)_
