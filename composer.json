@@ -1,0 +1,12 @@
+{
+  "name": "facebook-groups/desenvolvimentoweb",
+  "description": "Exemplo de aplicação CRUD usando PHP puro.",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "desenvolvimentoweb",
+      "email": "desenvolvimento.web.inbox@gmail.com"
+    }
+  ]
+}
