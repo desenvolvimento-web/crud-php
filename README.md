@@ -9,4 +9,4 @@ Exemplo de aplicação CRUD usando PHP _puro_, sem bibliotecas ou frameworks.
 - Uso de Ajax _puro_, **sem** jQuery, com recursos modernos do JavaScript como `async`/`await` e `fetch`.
 
 ---
-> ⚠ A ideia do repositório **não** é advogar pelo não-uso de bibliotecas e frameworks. É apenas servir como uma prova de conceito.
+> ⚠ A ideia do repositório **não** é advogar pelo não-uso de bibliotecas e frameworks, mas servir como uma prova de conceito.
