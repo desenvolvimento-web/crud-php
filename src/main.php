@@ -31,7 +31,7 @@ function delete(PDO $pdo, int $id)
     echo json_encode(['message' => 'deleted']);
 }
 
-function migrations(PDO $pdo)
+function create_todos_table(PDO $pdo)
 {
     $pdo->exec('
         create table if not exists todos (

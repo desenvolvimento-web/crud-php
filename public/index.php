@@ -5,7 +5,7 @@ require_once __DIR__ . '/../vendor/autoload.php';
 $dsn = $_ENV['PDO_DSN'] ?? 'sqlite:' . __DIR__ . '/../db.sqlite';
 $conn = conn($dsn);
 
-migrations($conn);
+create_todos_table($conn);
 
 if (route_is('POST', '/todos')) {
     create($conn);
