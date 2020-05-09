@@ -14,8 +14,9 @@ Exemplo de aplicação CRUD usando PHP _puro_, sem bibliotecas ou frameworks.
 
 ## Como rodar o projeto?
 
-Assumindo que você já tenha o [PHP instalado](https://www.php.net/manual/pt_BR/install.php), basta rodar o comando:
+Assumindo que você já tenha o [PHP](https://www.php.net/manual/pt_BR/install.php) e o [Composer](https://getcomposer.org/download/) instalados, execute os comandos:
 ```bash
+composer install
 php -S localhost:8000 -t public/
 ```
 
