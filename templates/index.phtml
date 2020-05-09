@@ -1,0 +1,20 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Done</th>
+      <th>Created at</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php foreach ($todos as $todo): ?>
+      <tr>
+        <td><?= $todo['id'] ?></td>
+        <td><?= $todo['title'] ?></td>
+        <td><?= $todo['done'] ?></td>
+        <td><?= $todo['created_at'] ?></td>
+      </tr>
+    <?php endforeach ?>
+  </tbody>
+</table>

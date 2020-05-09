@@ -8,5 +8,14 @@
       "name": "desenvolvimentoweb",
       "email": "desenvolvimento.web.inbox@gmail.com"
     }
-  ]
+  ],
+  "autoload": {
+    "files": [
+      "lib/functions.php",
+      "src/functions.php"
+    ]
+  },
+  "require": {
+    "ext-pdo": "*"
+  }
 }
