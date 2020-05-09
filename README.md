@@ -27,3 +27,4 @@ php -S localhost:8000 -t public/
   - `src/lib.php` é o onde fica o código que é genérico o suficiente para ser utilizado em outras aplicações, sem modificações, `lib` é uma abreviação para _library_ (biblioteca).
   - **`src/main.php` é onde fica nosso código principal.**
 - E finalmente `templates/` é onde ficam os arquivos relacionados à renderização de HTML pela aplicação, também é muito conhecido como **views**.
+  - _`templates/_layout.phtml` é a base para os outros templates/views e tem coisas comuns à todo o site/aplicação como **header** e o **footer**, assim você não precisa repeti-los em cada página_.
