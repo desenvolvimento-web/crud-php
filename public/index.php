@@ -24,5 +24,5 @@ if ($route_params = route_match('PUT', '|/todos/(\d+)|')) {
 }
 
 if ($route_params = route_match('DELETE', '|/todos/(\d+)|')) {
-    delete(intval($route_params[1]));
+    delete($conn, intval($route_params[1]));
 }

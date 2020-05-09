@@ -22,9 +22,13 @@ function update(int $id)
     echo "Hello, $id";
 }
 
-function delete(int $id)
+function delete(PDO $pdo, int $id)
 {
-    echo "Hello, $id";
+    $stmt = $pdo->query('delete from todos where id = :id');
+    $stmt->bindValue('id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+
+    echo json_encode(['message' => 'deleted']);
 }
 
 function migrations(PDO $pdo)

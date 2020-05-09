@@ -5,6 +5,7 @@
       <th>Title</th>
       <th>Done</th>
       <th>Created at</th>
+      <th>Actions</th>
     </tr>
   </thead>
   <tbody>
@@ -14,6 +15,9 @@
         <td><?= $todo['title'] ?></td>
         <td><?= $todo['done'] ?></td>
         <td><?= $todo['created_at'] ?></td>
+        <td>
+          <button onclick="destroy(<?= $todo['id'] ?>)">delete</button>
+        </td>
       </tr>
     <?php endforeach ?>
   </tbody>
