@@ -6,14 +6,15 @@ function create(PDO $pdo)
     $stmt = $pdo->prepare('insert into todos (title) values (:title)');
     $stmt->execute(['title' => $title]);
 
-    echo render(__DIR__ . '/../templates/ok.phtml');
+    echo render_layout(__DIR__ . '/../templates/ok.phtml');
 }
 
 function read(PDO $pdo)
 {
     $stmt = $pdo->query('select * from todos');
     $todos = $stmt->fetchAll();
-    echo render(__DIR__ . '/../templates/index.phtml', ['todos' => $todos]);
+
+    echo render_layout(__DIR__ . '/../templates/index.phtml', ['todos' => $todos]);
 }
 
 function update(int $id)

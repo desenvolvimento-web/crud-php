@@ -12,6 +12,7 @@
   "autoload": {
     "files": [
       "lib/functions.php",
+      "src/helpers.php",
       "src/functions.php"
     ]
   },

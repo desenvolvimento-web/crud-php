@@ -12,7 +12,7 @@ if (route_is('POST', '/todos')) {
 }
 
 if (route_is('GET', '/create')) {
-    echo render(__DIR__ . '/../templates/create.phtml');
+    echo render_layout(__DIR__ . '/../templates/create.phtml');
 }
 
 if (route_is('GET', '/')) {
