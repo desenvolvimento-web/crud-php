@@ -31,8 +31,8 @@ function create_todos_table(PDO $pdo)
 {
     return $pdo->exec('
         create table if not exists todos (
-            id integer not null primary key autoincrement,
-            title varchar not null,
+            id integer not null primary key auto_increment,
+            title varchar(255) not null,
             done bool not null default false,
             created_at datetime not null default current_timestamp
         )
