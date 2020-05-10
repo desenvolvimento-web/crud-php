@@ -25,8 +25,8 @@ php -S localhost:8000 -t public/
 - `public/` se refere a pasta pública da aplicação, aquela que será servida pelo web-server, onde ficam seus arquivos estáticos como JavaScript, CSS, imagens, fontes etc.
   - **`public/index.php` é o ponto de entrada da aplicação, é onde tudo começa.**
 - `src/` é onde fica o código-fonte da nossa aplicação é uma abreviação de _source_.
-  - `src/lib.php` é o onde fica o código que é genérico o suficiente para ser utilizado em outras aplicações, sem modificações, `lib` é uma abreviação para _library_ (biblioteca).
-  - `src/dbal.php` é o onde ficam as funções de acesso ao banco de dados, `dbal` é uma abreviação para _database abstraction layer_.
+  - `src/lib.php` é onde fica o código que é genérico o suficiente para ser utilizado em outras aplicações, sem modificações, `lib` é uma abreviação para _library_ (biblioteca).
+  - `src/dbal.php` é onde ficam as funções de acesso ao banco de dados, `dbal` é uma abreviação para _database abstraction layer_.
   - **`src/main.php` é onde fica nosso código principal.**
 - E finalmente `templates/` é onde ficam os arquivos relacionados à renderização de HTML pela aplicação, também é muito conhecido como **views**.
   - _`templates/_layout.phtml` é a base para os outros templates/views e tem coisas comuns à todo o site/aplicação como **header** e o **footer**, assim você não precisa repeti-los em cada página_.
