@@ -13,7 +13,9 @@
       <tr>
         <td><?= $todo['id'] ?></td>
         <td><?= $todo['title'] ?></td>
-        <td><?= $todo['done'] ?></td>
+        <td>
+          <input type="checkbox" <?= $todo['done'] == 1 ? 'checked' : '' ?> onchange="onCheck(event, <?= $todo['id'] ?>)">
+        </td>
         <td><?= $todo['created_at'] ?></td>
         <td>
           <button onclick="destroy(<?= $todo['id'] ?>)">delete</button>

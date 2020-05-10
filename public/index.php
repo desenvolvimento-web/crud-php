@@ -8,21 +8,26 @@ $conn = conn($dsn);
 create_todos_table($conn);
 
 if (route_is('POST', '/todos')) {
-    create($conn);
-}
-
-if (route_is('GET', '/create')) {
-    echo render_layout(__DIR__ . '/../templates/create.phtml');
+    header('Content-type: application/json');
+    echo create($conn);
 }
 
 if (route_is('GET', '/')) {
-    read($conn);
+    header('Content-type: text/html');
+    echo read($conn);
+}
+
+if (route_is('GET', '/create')) {
+    header('Content-type: text/html');
+    echo render_layout(__DIR__ . '/../templates/form.phtml');
 }
 
 if ($route_params = route_match('PUT', '|/todos/(\d+)|')) {
-    update(intval($route_params[1]));
+    header('Content-type: application/json');
+    echo update($conn, intval($route_params[1]));
 }
 
 if ($route_params = route_match('DELETE', '|/todos/(\d+)|')) {
-    delete($conn, intval($route_params[1]));
+    header('Content-type: application/json');
+    echo delete($conn, intval($route_params[1]));
 }

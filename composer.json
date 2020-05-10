@@ -12,6 +12,7 @@
   "autoload": {
     "files": [
       "src/lib.php",
+      "src/dbal.php",
       "src/main.php"
     ]
   },
