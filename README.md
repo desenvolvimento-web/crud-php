@@ -36,3 +36,6 @@ php -S localhost:8000 -t public/
 - Se você for iniciante, fique à vontade para criar issues dizendo os pontos apresentados que você não entendeu.
 - E se você for experiente, fique à vontade para criar PRs ajustando os pontos que poderiam ficar melhores.
   - _(lembrando que a ideia aqui é manter simples e fácil, é ser um exemplo, não um boilerplate pra uma aplicação maior)_
+
+## Explicando o repositório CRUD PHP
+[![Explicando o repositório CRUD PHP](https://i.imgur.com/RjbVDZS.png)](https://youtu.be/WHHQtm9tciY)
